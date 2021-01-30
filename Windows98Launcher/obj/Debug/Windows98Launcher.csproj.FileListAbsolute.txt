@@ -1,0 +1,11 @@
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\bin\Debug\Windows98Launcher.exe.config
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\bin\Debug\Windows98Launcher.exe
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\bin\Debug\Windows98Launcher.pdb
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\obj\Debug\Windows98Launcher.BootOptions.resources
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\obj\Debug\Windows98Launcher.MainWindow.resources
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\obj\Debug\Windows98Launcher.Properties.Resources.resources
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\obj\Debug\Windows98Launcher.csproj.GenerateResource.cache
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\obj\Debug\Windows98Launcher.csproj.CoreCompileInputs.cache
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\obj\Debug\Windows98Launcher.exe
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\obj\Debug\Windows98Launcher.pdb
+X:\Source\Repos\SpeedStriker243\Windows98Launcher\Windows98Launcher\obj\Debug\Windows98Launcher.csprojAssemblyReference.cache
