@@ -17,6 +17,7 @@ namespace Windows98Launcher
         public MainWindow()
         {
             InitializeComponent();
+            errorLog.Text = "No errors to report.";
             if (!Directory.Exists("qemu-98"))
             {
                 MessageBox.Show("The directory 'qemu-98' does not exist. Program must close.", "Fatal error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -25,12 +26,14 @@ namespace Windows98Launcher
             string Path = Directory.GetCurrentDirectory() + @"\qemu-98";
             if (File.Exists("windows98.iso") == false)
             {
-                MessageBox.Show("The Windows 98 ISO file was not found. Please add a Windows 98 ISO file next to this program and name it 'windows98.iso'.", "ISO file not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The Windows 98 ISO file was not found.", "ISO file not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Setup.Enabled = false;
+                errorLog.Text = "ISO image file not found." + Environment.NewLine + "Close the program, add an ISO file next to this program named \"windows98.iso\" and start the program again.";
             }
             if (File.Exists("winboot.img") == false)
             {
-                MessageBox.Show("The Windows 98 boot floppy image was not found. Please add a Windows 98 boot floppy disk file next to this program and name it 'winboot.img'.", "Boot floppy image not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The Windows 98 boot floppy image was not found.", "Boot floppy image not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                errorLog.Text = "Boot floppy image file not found." + Environment.NewLine + "Close the program, add a Windows 98 boot floppy disk file next to this program named \"winboot.img\" and start the program again..";
                 Setup.Enabled = false;
             }
             if (!File.Exists("win98.qcow2"))
@@ -56,9 +59,11 @@ namespace Windows98Launcher
                 }
                 if (createHardDisk == DialogResult.No)
                 {
+                    errorLog.Text = "No hard drive image found." + Environment.NewLine + "Restart the program and click \"Yes\" at the prompt to create one.";
                     Start.Enabled = false;
                     Setup.Enabled = false;
                     BootOptions.Enabled = false;
+                    ClearDisk.Enabled = false;
                 }
             }
             if (File.Exists("win98.qcow2"))
@@ -68,6 +73,7 @@ namespace Windows98Launcher
                 {
                     MessageBox.Show("The virtual hard drive image is smaller than 1 MB. Standard booting will be unavailable.", "Hard drive empty", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     Start.Enabled = false;
+                    errorLog.Text = "Hard drive image is empty." + Environment.NewLine + "Click \"Setup Windows 98\" to install the OS.";
                 }
             }
         }
@@ -126,6 +132,7 @@ namespace Windows98Launcher
                     MessageBox.Show("The QEMU installation is missing files. Program must close.", "Fatal error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     Environment.Exit(0);
                 }
+                errorLog.Text = "Hard drive image is empty." + Environment.NewLine + "Click \"Setup Windows 98\" to install the OS.";
                 Start.Enabled = false;
 
             }
@@ -143,10 +150,12 @@ namespace Windows98Launcher
                 if (HardDriveLength < 1048576)
                 {
                     Start.Enabled = false;
+                    errorLog.Text = "Hard drive image is empty." + Environment.NewLine + "Click \"Setup Windows 98\" to install the OS.";
                 }
                 else
                 {
                     Start.Enabled = true;
+                    errorLog.Text = "No errors to report.";
                 }
             }
             catch
