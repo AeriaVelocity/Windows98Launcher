@@ -37,3 +37,6 @@ No one said you had to, this was just an experiment. Plus it's more fun to play 
 
 ## Can it run Doom?
 Abso-fricking-lutely. [I even made a custom QCOW2 image for it.](https://drive.google.com/file/d/1FI5B9kikLCxFtn4Qac-uii5dc6SqVmh8/view?usp=sharing)
+
+## What happened to the original commit history?
+I kinda fricked everything up and did a `git push -f origin master` (wow, was that a mistake) but thankfully the old code with the original commit history was forked by [dports](https://github.com/dports/), so I was able to reupload it to my own account! All the old code now resides at [Windows98Launcher-classic](https://github.com/SpeedStriker243/Windows98Launcher-classic).
