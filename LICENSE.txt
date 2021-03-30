@@ -1,0 +1,22 @@
+              Take it and Like it Public Licence 
+                    Version 2, March 2021
+                    
+                   Created by Arsalan Kazmi
+   
+  You're free to copy, distribute, and modify this license document
+   however you want -- just make sure you change the name of your
+          modified license. None of this is legal advice.
+ 
+       Terms and conditions for copying and distributing 
+
+     You can use this software for whatever purpose you want.
+  Change it, sell it, use it for good, use it for evil, whatever!
+  
+       The developer or the creator of the license is not
+             liable for any misbehaving software.
+             
+  You have the right to relicense this work under any other license.
+                Don't feel forced to use this one.
+                
+             TL;DR: Do whatever you want with this, but
+         it isn't anyone else's fault if anything goes wrong.
